@@ -3,6 +3,8 @@ python:
   - "2.7"
   - "3.3"
   - "pypy"
+before_install:
+  - "apt-get install -qq build-essential pkg-config libopencv-dev"
 install:
   - "pip install . --use-mirrors"
   - "pip install pytest>=2.4.2 -U --use-mirrors"
